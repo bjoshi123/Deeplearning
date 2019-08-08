@@ -1,4 +1,4 @@
-##**Steps to build ANN**
+## **Steps to build ANN**
 
 * Define Network structure i.e No of layers, No of neurons in each layers, type of activation function in each layers, no of epochs
 * Random initialization of weights(W) and bias(b) for each layers
