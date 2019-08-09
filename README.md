@@ -1,4 +1,4 @@
-## **Steps to build NN using Gradient descent**
+## **Steps to build NN using gradient descent**
 
 * Define Network structure i.e No of layers, No of neurons in each layers, type of activation function in each layers, no of epochs
 * Random initialization of weights(W) and bias(b) for each layers
@@ -13,7 +13,7 @@
 	* update parameter W and b
 * Predict accuracy
 
-## **Steps to build NN using Batch Gradient descent**
+## **Steps to build NN using mini batch gradient descent**
 
 * Define Network structure i.e No of layers, No of neurons in each layers, type of activation function in each layers, no of epochs, batch   size
 * Random initialization of weights(W) and bias(b) for each layers
