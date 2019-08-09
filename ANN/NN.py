@@ -94,6 +94,9 @@ def L_forward_pass(X,parameters, layer_activation):
     return AL,caches
 
 def compute_cost(AL, Y):
+	'''
+	calculate cross entropy cost
+	'''
     m = AL.shape[1]
     cost = (1. / m) * (-np.dot(Y, np.log(AL).T) - np.dot(1 - Y, np.log(1 - AL).T))
     cost = np.squeeze(cost)
@@ -160,7 +163,7 @@ def update_parameters(parameters, grads, learning_rate):
         parameters["b" + str(l + 1)] = parameters["b" + str(l + 1)] - learning_rate * grads["db" + str(l + 1)]
     return parameters
 
-def model(X, Y, layers_dims,layers_activation, learning_rate=0.005, num_iterations=3000, print_cost=False):  # lr was 0.009
+def model(X, Y, layers_dims,layers_activation, learning_rate=0.005, num_iterations=3000, print_cost=False):
     np.random.seed(1)
     costs = []
     parameters = initialize_weight(layers_dims)
