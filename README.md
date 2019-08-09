@@ -15,7 +15,7 @@
 
 ## **Steps to build NN using mini batch gradient descent**
 
-* Define Network structure i.e No of layers, No of neurons in each layers, type of activation function in each layers, no of epochs, batch   size
+* Define Network structure i.e No of layers, No of neurons in each layers, type of activation function in each layers, no of epochs, batch   size(if batch size is 1 then it is stochastic gradient descent)
 * Random initialization of weights(W) and bias(b) for each layers
 * Divide training data into mini batches
 * Repeat for no of epochs
